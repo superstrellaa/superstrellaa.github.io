@@ -32,3 +32,4 @@ jobs:
         with:
           branch: gh-pages  # Rama de GitHub Pages
           folder: build  # Carpeta que contiene los archivos de tu build de React
+          token: ${{ secrets.GH_TOKEN }}  # Usa el token secreto

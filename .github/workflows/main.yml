@@ -3,7 +3,7 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - master  # o la rama principal que uses
+      - master 
   pull_request:
     branches:
       - master
@@ -30,5 +30,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # Rama de GitHub Pages
-          folder: build  # Carpeta que contiene los archivos de tu build de React
+          branch: gh-pages 
+          folder: build 
+          token: ${{ secrets.GH_TOKEN }} 
